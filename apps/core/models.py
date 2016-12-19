@@ -19,4 +19,4 @@ class Student(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     university = models.ForeignKey(University, null=True, blank=True)
-    course = models.ManyToManyField(Course, null=True, blank=True)
+    course = models.ManyToManyField(Course, blank=True)
